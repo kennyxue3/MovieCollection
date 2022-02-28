@@ -238,8 +238,15 @@ public class MovieCollection {
             String movieGenre = movie.getGenres();
             String[] genreArray = movieGenre.split("\\|");
             for (String genre : genreArray) {
-
+                if(!genres.contains(genre)) {
+                    genres.add(genre);
+                }
             }
+        }
+        for (int i = 0; i < genres.size(); i++) {
+            String title = genres.get(i);
+            int choiceNum = i + 1;
+            System.out.println("" + choiceNum + ". " + title);
         }
     }
 
