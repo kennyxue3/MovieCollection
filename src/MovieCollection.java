@@ -323,7 +323,7 @@ public class MovieCollection {
         for (int i = 0; i < moviesClone.size(); i++) {
             String title = moviesClone.get(i).getTitle();
             int choiceNum = i + 1;
-            System.out.println("" + choiceNum + ". " + title);
+            System.out.println("" + choiceNum + ". " + title + ": " + moviesClone.get(i).getUserRating());
         }
         System.out.println("Which movie would you like to learn more about?");
         System.out.print("Enter number: ");
@@ -342,7 +342,7 @@ public class MovieCollection {
         for (int i = 0; i < moviesClone.size(); i++) {
             String title = moviesClone.get(i).getTitle();
             int choiceNum = i + 1;
-            System.out.println("" + choiceNum + ". " + title);
+            System.out.println("" + choiceNum + ". " + title + ": $" + moviesClone.get(i).getRevenue());
         }
         System.out.println("Which movie would you like to learn more about?");
         System.out.print("Enter number: ");
